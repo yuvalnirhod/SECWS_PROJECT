@@ -1,1 +1,0 @@
-cmd_/home/fw/SecurityWS/HW4/firewall.ko := ld -r -m elf_i386 -T ./scripts/module-common.lds --build-id  -o /home/fw/SecurityWS/HW4/firewall.ko /home/fw/SecurityWS/HW4/firewall.o /home/fw/SecurityWS/HW4/firewall.mod.o ;  true

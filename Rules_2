@@ -1,0 +1,9 @@
+tcp_ack_out any 10.1.1.1/24 10.1.2.2/24 TCP any any yes accept
+tcp_out any 10.1.1.1/24 10.1.2.2/24 TCP any any any drop
+udp_out any 10.1.1.1/24 10.1.2.2/24 UDP any any any accept
+icmp_out any 10.1.1.1/24 10.1.2.2/24 ICMP any any any accept
+tcp_ack_in any 10.1.2.2/24 10.1.1.1/24 TCP any any yes drop
+tcp_in any 10.1.2.2/24 10.1.1.1/24 TCP any any any accept
+udp_in any 10.1.2.2/24 10.1.1.1/24 UDP any any any drop
+icmp_in any 10.1.2.2/24 10.1.1.1/24 ICMP any any any drop
+default any any any any any any any drop
